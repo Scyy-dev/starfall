@@ -51,3 +51,6 @@ display.clear()
 ```
 
 This line clears the Micro:Bit display before the game starts.
+
+## Explanation Notes
+A significant portion of this explanation was generated with assistance from [ChatGPT](https://openai.com/blog/chatgpt). It is highly recommended to use this tool to assist with the explanation process if you are unable to explain a concept through a particular lens (e.g. primary/high school students)
