@@ -5,4 +5,6 @@ This repository serves as a teaching resource, with guides that explain what eac
 
 This resource does NOT teach how to code - it serves to demonstrate a simple concept of what code can accomplish.
 
+See [explanation.md](explanation.md) for a line-by-line explanation of code and a brief explanation of design choices.
+
 
