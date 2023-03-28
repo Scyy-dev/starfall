@@ -20,17 +20,20 @@ while True:
     if presses_a is not button_a.get_presses() and player_x > 0:
         player_x -= 1
         presses_a = button_a.get_presses()
+
     if presses_b is not button_b.get_presses() and player_x < 4:
         player_x += 1
         presses_b = button_b.get_presses()
         
     star_y += 1
+
     if star_y > 4:
         if player_x in stars:
             break
         
         stars[0], stars[1] = (random.randint(0, 4), random.randint(0, 4))
         star_y = 0
+        
         score += 1
         if speed > 100:
             speed -= 5
