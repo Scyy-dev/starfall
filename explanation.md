@@ -15,3 +15,39 @@ import random
 ```
 
 This line tells the Micro:Bit to use another special tool that helps us create random numbers. We use random numbers to make the game fun!
+
+## Game State
+
+```py
+player_x = 2
+player_y = 4
+```
+
+These lines set the starting position of the player (represented by a pixel) to be at the bottom of the Micro:Bit display.
+
+```py
+stars = [0, 0]
+star_y = 4
+```
+
+These lines set the starting position of the falling stars and its y-coordinate (how far up or down it is on the Micro:Bit display).
+
+```py
+presses_a = 0
+presses_b = 0
+```
+
+These lines keep track of how many times the player has pressed buttons A and B. We use this to tell when the player wants to move left or right.
+
+```py
+score = 0
+speed = 300
+```
+
+These lines set the starting score of the player to zero and the starting speed of the falling stars to 300 milliseconds.
+
+```py
+display.clear()
+```
+
+This line clears the Micro:Bit display before the game starts.
