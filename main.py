@@ -3,6 +3,7 @@ import random
 
 player_x = 2
 player_y = 4
+
 stars = [0, 0]
 star_y = 4
 
@@ -13,6 +14,7 @@ score = 0
 speed = 300
 
 display.clear()
+
 while True:
 
     if presses_a is not button_a.get_presses() and player_x > 0:
