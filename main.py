@@ -3,7 +3,6 @@ import random
 
 player_x = 2
 player_y = 4
-
 dots = [0, 0]
 dot_y = 4
 
@@ -11,7 +10,6 @@ presses_a = 0
 presses_b = 0
 
 score = 0
-
 speed = 300
 
 display.clear()
