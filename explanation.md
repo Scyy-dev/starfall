@@ -32,7 +32,7 @@ stars = [0, 0]
 star_y = 4
 ```
 
-These lines set the starting position of the falling stars and its y-coordinate (how far up or down it is on the Micro:Bit display).
+These lines set the starting position of the falling stars and its y-coordinate (how far up or down it is on the Micro:Bit display). The stars_x list holds where our stars currently are - it's possible for the stars to overlap! That's intentional to keep the game exciting with surprises.
 
 ```py
 presses_a = 0
