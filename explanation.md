@@ -28,7 +28,7 @@ player_y = 4
 These lines set the starting position of the player (represented by a pixel) to be at the bottom of the Micro:Bit display.
 
 ```py
-stars = [0, 0]
+stars_x = [0, 0]
 star_y = 4
 ```
 
@@ -96,14 +96,14 @@ if star_y > 4:
 Once the stars reach the bottom of the display, we need to check if the player is touching any stars.
 
 ```py
-if player_x in stars:
+if player_x in stars_x:
     break
 ```
 
 This checks if the players position is the same as any of the stars. If it is, Game Over! We 'break' (exit) out of the loop and show the score.
 
 ```py
-stars[0], stars[1] = (random.randint(0, 4), random.randint(0, 4))
+stars_x[0], stars_x[1] = (random.randint(0, 4), random.randint(0, 4))
 star_y = 0
 ```
 
@@ -122,8 +122,8 @@ Once the stars have been reset, the player has 'survived' one round of stars. So
 ```py
 display.clear()
 display.set_pixel(player_x, 4, 5)
-display.set_pixel(stars[0], star_y, 9)
-display.set_pixel(stars[1], star_y, 9)
+display.set_pixel(stars_x[0], star_y, 9)
+display.set_pixel(stars_x[1], star_y, 9)
 ```
 
 Now that our player and stars have been updated, we need to actually display the stars and the player. To do this we reset the display so it's blank, and then redraw the player and the stars.
