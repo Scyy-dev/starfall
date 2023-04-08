@@ -134,7 +134,7 @@ Now that our player and stars have been updated, we need to actually display the
 sleep(speed)
 ```
 
-To make sure the stars don't fall super-duper fast, we slow them down by pausing the game. How long we pause them for slowly gets smaller and smaller the longer the player is alive.
+To make sure the stars don't fall super-duper fast, we slow them down by sleeping (pausing) the game. How long we pause them for slowly gets smaller and smaller the longer the player is alive.
 
 ## Game Over Screen
 
