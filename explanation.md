@@ -115,7 +115,7 @@ if speed > 100:
     speed -= 5
 ```
 
-Once the stars have been reset, the player has 'survived' one round of stars. So we need to give them a score, and ramp up the challenge by making the stars fall faster.
+Once the stars have been reset, the player has 'survived' one round of stars. So we need to increase their score, and ramp up the challenge by making the stars fall faster.
 
 ### Display
 
