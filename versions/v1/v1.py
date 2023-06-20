@@ -1,7 +1,6 @@
 from microbit import *
 
 player_x = 2
-player_y = 4
 
 presses_a = 0
 presses_b = 0

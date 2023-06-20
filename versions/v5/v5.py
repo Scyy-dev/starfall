@@ -2,7 +2,6 @@ from microbit import *
 import random
 
 player_x = 0
-player_y = 4
 
 stars = [[4, 3], [3, 2], [4, 1], [3, 0]]
 
