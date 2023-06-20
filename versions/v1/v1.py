@@ -20,3 +20,5 @@ while True:
 
     display.clear()
     display.set_pixel(player_x, 4, 5)
+
+    sleep(300)
