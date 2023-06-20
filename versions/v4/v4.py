@@ -42,9 +42,9 @@ while True:
     for star in stars_x:
         display.set_pixel(star, star_y, 9)
         if star_y > 0:
-            display.set_pixel(star, star_y - 1, 6)
+            display.set_pixel(star, star_y - 1, 3)
         if star_y > 1:
-            display.set_pixel(star, star_y - 2, 3)
+            display.set_pixel(star, star_y - 2, 1)
 
     sleep(speed)
 
