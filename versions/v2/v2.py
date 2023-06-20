@@ -10,8 +10,6 @@ star_y = 4
 presses_a = 0
 presses_b = 0
 
-speed = 300
-
 display.clear()
 
 while True:
@@ -34,4 +32,4 @@ while True:
     display.set_pixel(stars_x[0], star_y, 9)
     display.set_pixel(stars_x[1], star_y, 9)    
 
-    sleep(speed)
+    sleep(300)
