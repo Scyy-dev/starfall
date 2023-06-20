@@ -24,7 +24,8 @@ while True:
 
     star_y += 1
     if star_y > 4:
-        stars_x[0], stars_x[1] = (random.randint(0, 4), random.randint(0, 4))
+        stars_x[0] = random.randint(0, 4)
+        stars_x[1] = random.randint(0, 4)
         star_y = 0
 
     display.clear()

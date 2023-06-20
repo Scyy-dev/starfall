@@ -31,7 +31,8 @@ while True:
         if player_x in stars_x:
             break
         
-        stars_x[0], stars_x[1] = (random.randint(0, 4), random.randint(0, 4))
+        stars_x[0] = random.randint(0, 4)
+        stars_x[1] = random.randint(0, 4)
         star_y = 0
         
         score += 1

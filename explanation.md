@@ -103,7 +103,8 @@ if player_x in stars_x:
 This checks if the players position is the same as any of the stars. If it is, Game Over! We 'break' (exit) out of the loop and show the score.
 
 ```py
-stars_x[0], stars_x[1] = (random.randint(0, 4), random.randint(0, 4))
+stars_x[0] = random.randint(0, 4)
+stars_x[1] = random.randint(0, 4)
 star_y = 0
 ```
 
