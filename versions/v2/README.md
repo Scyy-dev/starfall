@@ -69,6 +69,6 @@ There are multiple ways to go about adding another star, but this approach is a 
 
 # Next Version
 
-Great stuff! We now have a player that can move, and a star (or multiple stars!) that can fall. If you got stuck adding another star, you can see the solution [here](./v2.py).
+Great! We now have a player that can move, and a star (or multiple stars!) that can fall. If you got stuck adding another star, you can see the full code [here](./v2.py).
 
-Our next version will add a scoring system, so we can tell how many times the player avoided the stars! We'll also look at a way to make it harder the longer we play. You can access the next version [here](../v3/README.md)
+The next version will add a scoring system, so we can tell how many times the player avoided the stars! We'll also look at a way to make it harder the longer we play. You can access the next version [here](../v3/README.md)

@@ -95,7 +95,7 @@ This ensures that there is nothing being displayed before our game starts.
 
 # Next Version
 
-And that's everything! We've added our player and given them the power to move left and right. We'll be adding something to dodge [here](../v2/README.md).
+Great! We've added our player and given them the power to move left and right. You can see the full code [here](./v1.py).
 
-You can also see the completed version [here](./v1.py).
+The next version will add some stars for the player try and dodge! You can access that [here](../v2/README.md)
 
