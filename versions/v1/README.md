@@ -41,7 +41,7 @@ This line starts an infinite loop. We'll see how it's useful in just a moment.
 
 ### Controlling our player
 
-This bit is a little tricky, so we'll break it down after writing it out. Make sure it's inside the forever loop!
+This bit is a little tricky, so we'll break it down after writing it out. Make sure it's inside the infinite loop!
 
 ```py
 if presses_a is not button_a.get_presses() and player_x > 0:
@@ -63,7 +63,7 @@ if presses_b is not button_b.get_presses() and player_x < 4:
     presses_b = button_b.get_presses()
 ```
 
-Great! We've added the ability to move left and right. But the display isn't updating, so we need to move the display call inside the loop as well.
+Great! We've added the ability to move left and right. But the display isn't updating, so we need to move the display call to inside the infinite loop as well.
 
 ### Giving the game time
 
