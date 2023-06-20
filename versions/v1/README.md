@@ -87,6 +87,8 @@ display.clear()
 
 This ensures that there is nothing being displayed before our game starts.
 
+# Next Version
+
 And that's everything! We've added our player and given them the power to move left and right. We'll be adding something to dodge in [v2](../v2/README.md).
 
 You can also see the completed version [here](./v1.py).
