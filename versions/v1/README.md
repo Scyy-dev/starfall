@@ -29,7 +29,7 @@ display.clear()
 display.set_pixel(player_x, 4, 5)
 ```
 
-This line makes the Micro:bit show our player! The player_x variable can be changed to move our player.
+This line makes the Micro:bit show our player! The player_x variable can be changed to move our player. The Micro:bit uses a coordinate and brightness system to control the LEDs. You can read about how they work at [The Micro:bit Reference](https://microbit-micropython.readthedocs.io/en/latest/display.html)
 
 ### Starting Our Game Loop
 
