@@ -10,7 +10,7 @@ star_y = 4
 presses_a = 0
 presses_b = 0
 
-score = 0
+score = -1
 speed = 300
 
 display.clear()
