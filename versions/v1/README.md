@@ -63,7 +63,13 @@ if presses_b is not button_b.get_presses() and player_x < 4:
     presses_b = button_b.get_presses()
 ```
 
-Great! We've added the ability to move left and right. But the display isn't updating, so we need to move the display call to inside the infinite loop as well.
+Great! We've added the ability to move left and right.
+
+### Seeing Our Player Move
+
+We've got the player moving, but we can't see the movement - the player pixel doesn't move!
+
+To fix this, we need to move where we display the player to *inside* the infinite loop. That way, after we press a button, we get to see the player move!
 
 ### Giving the game time
 
