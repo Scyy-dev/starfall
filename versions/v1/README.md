@@ -20,7 +20,7 @@ presses_a = 0
 presses_b = 0
 ```
 
-This line sets the starting position of the player (represented by a pixel). We use the presses variables later on - we use them to help us control the player!
+This line sets the starting position of the player (represented by a pixel). We'll use the `presses_a` and `presses_b` variables later on - we use them to help us control the player!
 
 ### Showing Our Player
 
