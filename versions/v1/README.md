@@ -75,7 +75,7 @@ This is because the display is being cleared faster than it can display the play
 sleep(300)
 ```
 
-I chose 300 because it sets a good pace for our game. We'll see in later versions why the number we put there is important.
+I chose 300 milliseconds because it sets a good pace for our game. We'll see in later versions why the number we put there is important.
 
 ### Final Cleanup
 
