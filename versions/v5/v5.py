@@ -11,11 +11,10 @@ presses_b = 0
 score = 0 - len(stars)
 speed = 300
 
+display.clear()
+
 game_over = False
-
-sleep(1500)
-
-while not game_over:
+while True:
 
     if presses_a is not button_a.get_presses() and player_x > 0:
         player_x -= 1
@@ -24,17 +23,6 @@ while not game_over:
     if presses_b is not button_b.get_presses() and player_x < 4:
         player_x += 1
         presses_b = button_b.get_presses()
-
-    display.clear()
-    display.set_pixel(player_x, 4, 5)
-    for star in stars:
-        star_x = star[0]
-        star_y = star[1]
-        display.set_pixel(star_x, star_y, 9)
-        if star_y > 0:
-            display.set_pixel(star_x, star_y - 1, 3)
-        if star_y > 1:
-            display.set_pixel(star_x, star_y - 2, 1)
 
     for star in stars:
         star[1] += 1
@@ -48,13 +36,24 @@ while not game_over:
             star[1] = 0
 
             score += 1
-
             if speed > 100:
                 speed -= 1
+
+    if game_over:
+        break
+
+    display.clear()
+    display.set_pixel(player_x, 4, 5)
+    for star in stars:
+        star_x = star[0]
+        star_y = star[1]
+        display.set_pixel(star_x, star_y, 9)
+        if star_y > 0:
+            display.set_pixel(star_x, star_y - 1, 3)
+        if star_y > 1:
+            display.set_pixel(star_x, star_y - 2, 1)
 
     sleep(speed)
 
 
 display.scroll("Score " + str(score))
-sleep(2000)
-display.clear()
