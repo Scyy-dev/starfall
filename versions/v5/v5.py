@@ -1,9 +1,9 @@
 from microbit import *
 import random
 
-player_x = 0
+player_x = 2
 
-stars = [[4, 3], [3, 2], [4, 1], [3, 0]]
+stars = [[4, 4], [4, 4], [4, 4], [4, 4]]
 
 presses_a = 0
 presses_b = 0
