@@ -9,7 +9,7 @@ The objective for this version is to add basic player movement on the Micro:bit.
 from microbit import *
 ```
 
-This line tells the Micro:Bit to use a special set of tools (called "libraries") that help it run the code we're going to write. Without it, we can't control the Micro:Bit!
+This line tells the Micro:Bit to use a special set of tools (called "libraries") we need. Without it, we can't control the Micro:Bit!
 
 ### Player Data
 
