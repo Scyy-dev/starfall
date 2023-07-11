@@ -15,12 +15,9 @@ This line tells the Micro:Bit to use a special set of tools (called "libraries")
 
 ```py
 player_x = 2
-
-presses_a = 0
-presses_b = 0
 ```
 
-This line sets the starting position of the player (represented by a pixel). We'll use the `presses_a` and `presses_b` variables later on - we use them to help us control the player!
+This line sets the starting position of the player (represented by a pixel).
 
 ### Showing Our Player
 
@@ -44,23 +41,20 @@ This line starts an infinite loop. We'll see how it's useful in just a moment.
 This bit is a little tricky, so we'll break it down after writing it out. Make sure it's inside the infinite loop!
 
 ```py
-if presses_a is not button_a.get_presses() and player_x > 0:
+if button_a.was_pressed() and player_x > 0:
     player_x -= 1
-    presses_a = button_a.get_presses()
 ```
-
-The first line here is a big if statement that does multiple things. It first checks to see if the number of times the player has pressed the 'A' button matches with the number stored on the Micro:bit. If they don't match, it means the player has pressed the button!
+This if statement contains 2 parts. The first part checks if the button A was pressed. There's a bit of stuff that goes on behind the scenes to make it work, but all we need to know is that it checks if the button was pressed!
 
 We also don't want the player to move outside the display screen. So we check to see if they're already at the edge first.
 
-Once we know that they've pressed the button AND that they're not on the edge, we move the player to the left. We also update our button press count for the next time they press the button.
+Once we know that they've pressed the button AND that they're not on the edge, we move the player to the left.
 
 Now we repeat this for the 'B' button, again making sure it's inside our forever loop:
 
 ```py
-if presses_b is not button_b.get_presses() and player_x < 4:
+if button_b.was_pressed() and player_x < 4:
     player_x += 1
-    presses_b = button_b.get_presses()
 ```
 
 Great! We've added the ability to move left and right.

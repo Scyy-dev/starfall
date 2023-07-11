@@ -13,13 +13,11 @@ display.clear()
 
 while True:
 
-    if presses_a is not button_a.get_presses() and player_x > 0:
+    if button_a.was_pressed() and player_x > 0:
         player_x -= 1
-        presses_a = button_a.get_presses()
 
-    if presses_b is not button_b.get_presses() and player_x < 4:
+    if button_b.was_pressed() and player_x < 4:
         player_x += 1
-        presses_b = button_b.get_presses()
 
     star_y += 1
     if star_y > 4:
